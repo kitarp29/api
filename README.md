@@ -21,12 +21,16 @@ Minimun requirements:
 - Any Code Editor
 - Internet Browser
 - Internet
-
-### Steps to set up locally
+## Docker Setup:
+- First make sure your laptop has Docker
+- Open terminal, run ```docker pull kitarp29/gdsc_dsi_api:1.0```
+- Run ```docker run -e  DATABASE_URL -d --name pk -p 5000:5000 kitarp29/gdsc_dsi_api:1.0```
+- The API is running at  [http://localhost:5000/](http://localhost:5000/)
+## Steps to set up locally
 - Clone the Repo
 - Open in any code editor
 - In index.js replace ```process.env.DATABASE_URL``` with the URL of your MongoDB Database
-- In your terminal, run: ``` npm i``` (supposing you have npm, commands might difffer for yarn)
+- In your terminal, run: ``` npm i``` (supposing you have npm, commands might differ for yarn)
 - Now, run: ```nodemon index.js```
  
 This should start a server running at [http://localhost:5000/](http://localhost:5000/)
