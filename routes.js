@@ -26,16 +26,6 @@ router.get('/gdsc', async (req, res) => {
     }
   })
     
-
-router.get('/three',(req,res)=>{
-    console.log("3");
-    res.send("three objects");
-   
-});
-router.get('/four',(req,res)=>{
-    console.log("4");
-    res.send("four objects");
-});
 router.get('/',(req,res)=>{
     console.log("homepage");
     res.send("welcome to GDSC APP");
